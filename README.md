@@ -27,3 +27,35 @@
 | **Collaboration** | Supports collaboration through features like branches and merging. | Provides features like pull requests, issues, and forks for easier collaboration. |
 | **Accessibility** | Requires installation on your computer. | Accessible through a web browser. |
 | **Examples of Use** | Tracking changes in code, creating backups, and managing project history. | Sharing code with others, collaborating on open-source projects, and hosting private repositories. |
+
+## Setting Up Git: A Quick Guide
+
+**1. Install Git:**
+   - Download the installer from [https://git-scm.com/](https://git-scm.com/) for your operating system (Windows, macOS, or Linux) and follow the instructions.
+
+**2. Verify Installation:**
+   - Open your terminal or command prompt and type `git --version`. If it shows a version number, Git is installed.
+
+**3. Configure Your Name and Email:**
+   - These will be used to identify you in your commits.
+   ```bash
+   git config --global user.name "Your Name"
+   git config --global user.email "your.email@example.com"
+   ```
+The `git config --list` command is used to display all of your Git configuration settings. It will show you the current values for various Git options, such as your name, email, editor, and other preferences. 
+
+Here's an example of what the output might look like:
+
+```
+user.name=Your Name
+user.email=your.email@example.com
+core.editor=vim
+color.ui=auto
+...
+```
+
+In this example, the user's name is "Your Name", their email is "your.email@example.com", their preferred editor is "vim", and color output is enabled.
+
+You can use this command to verify that your configuration settings are correct or to see the current values for specific options.
+
+
