@@ -246,3 +246,52 @@ This output shows the specific differences between the current version of `new_f
 
 By effectively using `git status` and `git diff`, you can gain a better understanding of the changes in your Git repository and make informed decisions about your commits.
 
+**Git Folder Staging**
+
+* **Purpose:** Adds files within a specific folder to the staging area for inclusion in the next commit.
+* **Command:** `git add <folder_name>`
+  - Replace `<folder_name>` with the name of the folder you want to stage.
+  - This command will stage all files and subfolders within the specified folder.
+
+**Example:**
+
+1. **Create a new folder:**
+   ```bash
+   mkdir new_folder
+   ```
+2. **Create files within the folder:**
+   ```bash
+   touch new_folder/file1.txt
+   touch new_folder/file2.txt
+   ```
+3. **Stage the entire folder:**
+   ```bash
+   git add new_folder
+   ```
+
+**Git Diff for Folders**
+
+* **Purpose:** Compares the changes in a specific folder to the staged changes or the last committed version.
+* **Command:** `git diff <folder_name>`
+  - Replace `<folder_name>` with the name of the folder you want to compare.
+
+**Example:**
+
+1. **Compare changes in the folder to staged changes:**
+   ```bash
+   git diff new_folder
+   ```
+2. **Compare changes in the folder to the last commit:**
+   ```bash
+   git diff HEAD new_folder
+   ```
+
+**Additional Notes:**
+
+- You can use the `--cached` option instead of `--staged` to get the same output.
+- The `git diff` command can be used with specific file paths within the folder to compare differences between specific files.
+- To see a more detailed diff output, you can use the `--patch` option.
+- If you want to stage only specific files within a folder, you can use the `git add <file_path>` command.
+
+By effectively using these commands, you can efficiently manage changes within Git folders and gain a better understanding of the differences between the current state and previous versions.
+
