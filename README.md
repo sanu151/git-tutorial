@@ -368,3 +368,4 @@ git revert HEAD
 ```
 
 By understanding `git commit` and `git reset`, you can effectively manage your Git repository and undo changes if necessary.
+
