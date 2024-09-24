@@ -28,6 +28,32 @@
 | **Accessibility** | Requires installation on your computer. | Accessible through a web browser. |
 | **Examples of Use** | Tracking changes in code, creating backups, and managing project history. | Sharing code with others, collaborating on open-source projects, and hosting private repositories. |
 
+## Most Used Git and GitHub Commands
+
+| Command | Definition | Example |
+|---|---|---|
+| **Git Commands** | | |
+| `git init` | Initializes a new Git repository in the current directory. | `git init` |
+| `git add <file>` | Adds a file to the staging area. | `git add README.md` |
+| `git commit -m "message"` | Creates a new commit with the specified message. | `git commit -m "Initial commit"` |
+| `git status` | Shows the current status of the repository. | `git status` |
+| `git diff` | Shows the differences between the working directory and the staged or last committed version. | `git diff` |
+| `git log` | Shows the commit history. | `git log` |
+| `git checkout <branch>` | Switches to the specified branch. | `git checkout feature_branch` |
+| `git branch <branch_name>` | Creates a new branch. | `git branch new_feature` |
+| `git merge <branch>` | Merges the specified branch into the current branch. | `git merge feature_branch` |
+| `git pull` | Fetches changes from a remote repository and merges them into the current branch. | `git pull origin main` |
+| `git push` | Pushes changes to a remote repository. | `git push origin main` |
+| **GitHub Commands** | | |
+| `git clone <url>` | Clones a remote repository to your local machine. | `git clone https://github.com/user/repo.git` |
+| `git remote add origin <url>` | Adds a remote repository to your local repository. | `git remote add origin https://github.com/user/repo.git` |
+| `git pull origin <branch>` | Fetches changes from a remote branch and merges them into your local branch. | `git pull origin main` |
+| `git push origin <branch>` | Pushes changes from your local branch to a remote branch. | `git push origin main` |
+| `git pull request` | Creates a pull request on GitHub to propose changes to a repository. | `git pull request` |
+| `git issue` | Creates a new issue on GitHub. | `git issue` |
+
+
+
 ## Setting Up Git: A Quick Guide
 
 **1. Install Git:**
