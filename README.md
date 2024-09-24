@@ -182,3 +182,67 @@ By following these steps, you'll have successfully created a Git folder, initial
 
 By understanding staging and unstaging, you can effectively manage your Git workflow and create clean, focused commits.
 
+**`git status`**
+
+This command provides a snapshot of the current state of your Git repository, showing you which files have been modified, staged, or unstaged.
+
+**Example:**
+
+```bash
+git status
+```
+
+**Output:**
+
+```
+On branch main
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        new_file.txt
+
+nothing to commit, working tree clean
+```
+
+This output indicates that there is an untracked file named `new_file.txt` in the working directory. It also shows that there are no staged changes or uncommitted changes.
+
+**`git diff`**
+
+This command compares the current state of your working directory to the staged changes or to the last committed version. It shows you the specific differences between the files.
+
+**Example:**
+
+1. **Compare working directory to staged changes:**
+   ```bash
+   git diff
+   ```
+2. **Compare staged changes to last commit:**
+   ```bash
+   git diff --staged
+   ```
+3. **Compare working directory to last commit:**
+   ```bash
+   git diff HEAD
+   ```
+
+**Output:**
+
+```
+diff --git a/new_file.txt b/new_file.txt
+index 8864750..e69de29 100644
+--- a/new_file.txt
++++ b/new_file.txt
+@@ -0,0 +1 +2 @@
++This is a new line.
+```
+
+This output shows the specific differences between the current version of `new_file.txt` and the last committed version. In this case, a new line has been added to the file.
+
+**Additional Notes:**
+
+- You can use the `--cached` option instead of `--staged` to get the same output.
+- The `git diff` command can also be used with specific file paths to compare differences between specific files.
+- To see a more detailed diff output, you can use the `--patch` option.
+
+By effectively using `git status` and `git diff`, you can gain a better understanding of the changes in your Git repository and make informed decisions about your commits.
+
