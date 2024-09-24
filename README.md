@@ -369,3 +369,61 @@ git revert HEAD
 
 By understanding `git commit` and `git reset`, you can effectively manage your Git repository and undo changes if necessary.
 
+**Git Log**
+
+The `git log` command is used to view the commit history of a Git repository. It provides information about each commit, including its author, date, and a short message describing the changes.
+
+**Basic Usage:**
+
+```bash
+git log
+```
+
+This will display a list of commits, starting from the most recent to the oldest.
+
+```bash
+$ git log
+commit 425a91ec7759aba8844fe1b47646795845f30665 (HEAD -> master)
+Author: Supriyo Das <das.supriyo07@gmail.com>
+Date:   Tue Sep 24 21:33:23 2024 +0530
+
+    First Commit
+
+```
+
+**Options:**
+
+You can customize the output of `git log` using various options:
+
+* **`--oneline`:** Displays each commit on a single line.
+* **`--pretty=format`:** Specifies the format of the output. For example, `--pretty=format:"%h %s"` will display the commit hash and subject.
+* **`--author=<author_name>`:** Filters commits by author.
+* **`--after=<date>`:** Shows commits after a specific date.
+* **`--before=<date>`:** Shows commits before a specific date.
+* **`--grep=<pattern>`:** Filters commits based on their commit message.
+* **`--reverse`:** Reverses the order of commits (oldest to newest).
+
+**Examples:**
+
+* **Show the commit history in a one-line format:**
+  ```bash
+  git log --oneline
+  ```
+* **Show the commit hash, subject, and author:**
+  ```bash
+  git log --pretty=format:"%h %s (%an)"
+  ```
+* **Show commits made by a specific author:**
+  ```bash
+  git log --author="John Doe"
+  ```
+* **Show commits made after a specific date:**
+  ```bash
+  git log --after="2023-01-01"
+  ```
+* **Show commits with a specific keyword in the commit message:**
+  ```bash
+  git log --grep="feature"
+  ```
+
+By using these options, you can tailor the output of `git log` to your specific needs and easily find the commits you're looking for.
