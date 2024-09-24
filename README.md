@@ -321,3 +321,50 @@ By effectively using `git status` and `git diff`, you can gain a better understa
 
 By effectively using these commands, you can efficiently manage changes within Git folders and gain a better understanding of the differences between the current state and previous versions.
 
+## Git Commit and Reset Commit
+
+### Git Commit
+* **Purpose:** Creates a snapshot of the current state of your repository, saving your changes.
+* **Command:** `git commit -m "<message>"`
+  - Replace `<message>` with a descriptive message about the changes you made.
+  - The message should be concise and informative.
+
+**Example:**
+```bash
+git commit -m "Added new feature to calculate area of a circle"
+```
+
+### Git Reset
+* **Purpose:** Reverts the repository to a previous state.
+* **Command:** `git reset <commit_hash>`
+  - Replace `<commit_hash>` with the SHA-1 hash of the commit you want to reset to.
+
+**Types of Resets:**
+* **Soft reset:** Unstages changes but keeps them in your working directory.
+* **Mixed reset:** Unstages changes and discards them from your working directory.
+* **Hard reset:** Unstages changes, discards them from your working directory, and removes them from the commit history.
+
+**Example:**
+```bash
+# Soft reset to the previous commit:
+git reset HEAD~1
+
+# Mixed reset to the previous commit:
+git reset --mixed HEAD~1
+
+# Hard reset to the previous commit:
+git reset --hard HEAD~1
+```
+
+**Additional Notes:**
+* Use `git log` to view the commit history and get the SHA-1 hashes.
+* Be cautious with hard resets, as they can permanently delete changes.
+* Consider using `git revert` to create a new commit that undoes the changes of a previous commit instead of resetting.
+
+**Example:**
+```bash
+# Revert the last commit:
+git revert HEAD
+```
+
+By understanding `git commit` and `git reset`, you can effectively manage your Git repository and undo changes if necessary.
