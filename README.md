@@ -40,6 +40,7 @@
 | `git status` | Shows the current status of the repository. | `git status` |
 | `git diff` | Shows the differences between the working directory and the staged or last committed version. | `git diff` |
 | `git log` | Shows the commit history. | `git log` |
+| `git show <commit_id>` | display detailed information about a specific commit. | `git show 913c106` |
 | `git checkout <branch>` | Switches to the specified branch. | `git checkout feature_branch` |
 | `git branch <branch_name>` | Creates a new branch. | `git branch new_feature` |
 | `git merge <branch>` | Merges the specified branch into the current branch. | `git merge feature_branch` |
