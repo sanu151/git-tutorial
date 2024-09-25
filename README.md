@@ -35,6 +35,7 @@
 | **Git Commands** | | |
 | `git init` | Initializes a new Git repository in the current directory. | `git init` |
 | `git add <file>` | Adds a file to the staging area. | `git add README.md` |
+| `git rm --cached <file>` | Unstage a file from staging area. | `git rm --cached README.md` |
 | `git commit -m "message"` | Creates a new commit with the specified message. | `git commit -m "Initial commit"` |
 | `git status` | Shows the current status of the repository. | `git status` |
 | `git diff` | Shows the differences between the working directory and the staged or last committed version. | `git diff` |
