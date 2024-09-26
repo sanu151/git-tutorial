@@ -653,7 +653,7 @@ By using either of these approaches, you can effectively manage your code on Git
 | **Unordered List** | List items without a specific order | \`\* Item 1\` <br> \`\* Item 2\` <br> \`  \* Sub-item\` |
 | **Ordered List** | List items with a specific order (numbered) | \`1. Item 1\` <br> \`2. Item 2\` <br> \`   3. Sub-item\` |
 | **Link** | Create a hyperlink to another resource | \`[Link Text] (https://www.example.com)`\` |
-| **Image** | Embed an image | \`![Image Alt Text] (about:sanitized)\` |
+| **Image** | Embed an image | \`![Image Alt Text] (image src)\` |
 | **Horizontal Rule** | Create a thematic line separator | \`\*\*\*\` <br> \`---\` <br> \`\_\_\_\` |
 | **Table** | Organize data in a tabular format |
 
