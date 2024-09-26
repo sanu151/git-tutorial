@@ -739,6 +739,78 @@ Markdown supports a wide range of emojis that can be used to add expressiveness 
 
 You can find more information about emojis and their syntax on websites like [https://github.com/github/gemoji](https://github.com/github/gemoji) and [https://emojipedia.org/](https://emojipedia.org/).
 
+###### Examples
+```
+# Heading 1
+
+## Heading 2
+
+### Heading 3
+
+#### Heading 4
+
+##### Heading 5
+
+###### Heading 6
+
+<!-- Comment -->
+
+This is normal text, One or more lines of text separated by blank lines or double_space.
+
+**This is Bold Text**  
+_This is italic Text_  
+~~This is Strikethrough text~~
+
+**Single line code**  
+`printf("Hello World)`
+
+**Multi line Code**
+
+```C
+#include<stdio.h>
+
+int main(){
+    printf("Hello World");
+    return 0;
+}
+```
+
+> This is a quoted passage
+
+**Unorder List**
+
+- List item 1
+- List item 2
+- List item 3
+
+**Order List**
+
+1. List item 1
+2. List item 2
+3. List item 3
+
+**Link**  
+[Git Tutorial](https://github.com/sanu151/git-tutorial)
+
+**Image**
+![alt text](image.png)
+
+<!-- [Image Text](image Source) -->
+
+**Horizontal Rule**
+
+---
+
+**Table**
+| Heading 1 | Heading 2 | Heading 3 |
+|---|---|---|
+| Data 1 | Data 2 | Data 3 |
+| Data 4 | Data 5 | Data 6 |
+
+**Emoji**  
+😊 <!--Copy and Pest is the best option-->
+```
+
 
 **Additional Notes:**
 
