@@ -789,6 +789,13 @@ int main(){
 2. List item 2
 3. List item 3
 
+**Tasks**
+
+- [x] Complete feature X
+- [-] Fix bug Y
+- [ ] Write unit tests for Z
+- [ ] Update documentation
+
 **Link**  
 [Git Tutorial](https://github.com/sanu151/git-tutorial)
 
