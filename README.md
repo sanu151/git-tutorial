@@ -636,7 +636,9 @@ While GitHub doesn't offer direct file editing functionality on the webpage GUI,
 
 By using either of these approaches, you can effectively manage your code on GitHub and collaborate with others.
 
-I'd be glad to create a comprehensive Markdown table for you:
+## Comprehensive Markdown table :
+
+* We can use HTML for markdown
 
 | Markdown Element | Description | Example |
 |---|---|---|
