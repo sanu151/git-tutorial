@@ -766,14 +766,14 @@ _This is italic Text_
 
 **Multi line Code**
 
-\` ```C
+\```C
 #include<stdio.h>
 
 int main(){
     printf("Hello World");
     return 0;
 }
-```\`
+```\
 
 > This is a quoted passage
 
