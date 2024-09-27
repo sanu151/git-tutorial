@@ -959,6 +959,32 @@ By understanding these commands and their workflows, you can effectively manage 
     ```
     This merges the changes from the `feature-new-feature` branch into the `main` branch.
 
+To delete a branch in Git using the command line interface (CLI), you can use the `git branch` command with the `-d` or `-D` option.
+
+Here's a breakdown of the options:
+
+- **`-d`:** Deletes the branch only if it has been merged into the current branch.
+- **`-D`:** Deletes the branch unconditionally, even if it has not been merged.
+
+**Example:**
+
+To delete a branch named "feature_branch":
+
+```bash
+git branch -d feature_branch
+```
+
+If you want to force delete the branch, regardless of whether it has been merged, use:
+
+```bash
+git branch -D feature_branch
+```
+
+**Important Notes:**
+
+- **Deleting a branch permanently removes its history.** Make sure you have a backup or have merged the changes from the branch into another branch before deleting it.
+- If you're unsure whether a branch has been merged, you can use `git branch --merged` to list branches that have been merged into the current branch.
+
 **Key Points:**
 
 - **Branch:** A parallel line of development within a repository.
