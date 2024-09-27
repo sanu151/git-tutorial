@@ -959,6 +959,8 @@ By understanding these commands and their workflows, you can effectively manage 
     ```
     This merges the changes from the `feature-new-feature` branch into the `main` branch.
 
+## Delete a branch
+
 To delete a branch in Git using the command line interface (CLI), you can use the `git branch` command with the `-d` or `-D` option.
 
 Here's a breakdown of the options:
