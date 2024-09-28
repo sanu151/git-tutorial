@@ -16,8 +16,7 @@
 * **Collaborate Effectively:** Work with others seamlessly and efficiently.
 * **Learn and Grow:** Explore open-source projects and contribute to the community.
 
-### Visualization of Git : 
-**[Visualizing Git](https://git-school.github.io/visualizing-git/)**
+### Visualization of Git : **[Visualizing Git](https://git-school.github.io/visualizing-git/)**
 
 ## Git vs. GitHub: A Comparison
 
