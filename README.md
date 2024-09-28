@@ -1,4 +1,4 @@
-# Git and GitHub
+<h1 style="color:white; background-color:black">"Git and GitHub</h1>
 
 **Git:** Let's start with Git. Imagine it as a super-powered diary for our code. It keeps track of every change we make, allowing us to go back in time if something goes wrong. It's like having a time machine for our projects!
 
