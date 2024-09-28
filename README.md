@@ -1095,3 +1095,61 @@ If you're working on a web application and encounter a bug, you could create a n
 * **Assignee:** John Doe (the developer responsible for the 'Submit' button)
 
 By using GitHub Issues effectively, you can improve collaboration, streamline your development process, and ensure that your projects are delivered on time and with high quality.
+
+### **Fast-forward Merge in Git**
+
+A fast-forward merge in Git is a type of merge that occurs when the branch you're merging into (the target branch) hasn't diverged from the branch you're merging from (the source branch) since the last commit on the source branch. 
+
+**How it works:**  
+* Instead of creating a new merge commit, Git simply moves the target branch's pointer forward to the tip of the source branch.  
+* This effectively integrates the changes from the source branch into the target branch without creating any additional merge commit.  
+* It maintains a linear history, making it easier to follow the evolution of the codebase.
+  
+**When does it happen:**  
+* You're merging a feature branch back into the main branch, and no changes have been made to the main branch since the feature branch was created.  
+* You're pulling changes from a remote repository, and your local branch is up-to-date with the remote branch.  
+
+**Conditions for a Fast-Forward Merge:**
+
+* The branch being merged must be a direct descendant of the current branch.
+* There must be no commits on the current branch that are not also on the branch being merged.
+
+**Steps to Perform a Fast-Forward Merge:**
+
+1. **Switch to the branch you want to merge into:**
+   ```bash
+   git checkout main
+   ```
+
+2. **Merge the other branch:**
+   ```bash
+   git merge feature_branch
+   ```
+
+If the merge is a fast-forward, Git will display a message like:
+
+```
+Updating 9876543210abcdef1234567890...
+Fast-forward
+```
+
+**Advantages of Fast-Forward Merges:**
+
+* **Simple and Efficient:** Fast-forward merges are straightforward and don't create unnecessary merge commits.
+* **Cleaner History:** They keep your commit history linear, making it easier to follow and understand.
+
+**When to Use Fast-Forward Merges:**
+
+* When you want to merge a branch that has only new commits and no conflicting changes.
+* When you want to keep your commit history clean and linear.
+
+**Disabling fast-forward merges:**
+If you want to explicitly create a merge commit even when a fast-forward merge is possible, use the --no-ff flag:
+
+```bash
+git merge --no-ff feature-branch
+```
+
+**Note:** If there are conflicting changes between the two branches, a fast-forward merge will not be possible. In this case, Git will stop and require you to resolve the conflicts before completing the merge.
+
+By understanding fast-forward merges, you can effectively merge branches in Git and maintain a clean commit history.
