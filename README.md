@@ -1132,6 +1132,8 @@ If the merge is a fast-forward, Git will display a message like:
 Updating 9876543210abcdef1234567890...
 Fast-forward
 ```
+![image](https://github.com/user-attachments/assets/dab5afa5-9413-4f6b-aebf-6de0e44f4b1c)
+
 
 **Advantages of Fast-Forward Merges:**
 
