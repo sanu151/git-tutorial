@@ -1157,3 +1157,46 @@ git merge --no-ff feature-branch
 **Note:** If there are conflicting changes between the two branches, a fast-forward merge will not be possible. In this case, Git will stop and require you to resolve the conflicts before completing the merge.
 
 By understanding fast-forward merges, you can effectively merge branches in Git and maintain a clean commit history.
+
+**3-Way Merge in Git**
+
+A 3-way merge is a more complex type of merge that Git performs when there are conflicting changes between the two branches being merged. In this scenario, Git compares the changes in both branches to a common ancestor commit to determine how to resolve the conflicts.
+
+**Steps Involved in a 3-Way Merge:**
+
+1. **Identify Common Ancestor:** Git finds the common ancestor commit of the two branches being merged.
+2. **Compare Changes:** Git compares the changes made in each branch relative to the common ancestor.
+3. **Resolve Conflicts:** If there are conflicting changes, Git will stop and indicate the files that need to be resolved. You'll need to manually edit the files to resolve the conflicts and decide which changes to keep.
+4. **Stage Resolved Changes:** Once you've resolved the conflicts, stage the changes using `git add`.
+5. **Complete the Merge:** Use `git commit` to create a new commit that represents the merged changes.
+
+**Example:**
+
+```bash
+git checkout main
+git merge feature_branch
+```
+
+If there are conflicts, Git will display a message like:
+
+```
+Auto-merging conflicting file: path/to/file.txt
+CONFLICT (content): Merge conflict in path/to/file.txt
+Automatic merge failed; fix conflicts and then commit.
+```
+
+You'll need to edit `path/to/file.txt` to resolve the conflicts, then stage the changes and commit the merge.
+
+![3-way marge](https://kodekloud.com/blog/content/images/2023/10/git-merge.gif)
+
+**Advantages of 3-Way Merges:**
+
+* **Handles Conflicts Effectively:** 3-way merges can help resolve conflicts more accurately by comparing changes to a common ancestor.
+* **Preserves History:** They preserve the history of both branches, making it easier to understand the development process.
+
+**When to Use 3-Way Merges:**
+
+* When there are conflicting changes between the branches being merged.
+* When you want to preserve a detailed history of your project.
+
+By understanding 3-way merges, you can effectively handle conflicts in Git and maintain a clean and accurate project history.
