@@ -1132,7 +1132,7 @@ If the merge is a fast-forward, Git will display a message like:
 Updating 9876543210abcdef1234567890...
 Fast-forward
 ```
-[Fast-Forword Marge](https://miro.medium.com/v2/resize:fit:1400/0*GhW5WSCRH1dneU6c.gif)
+![Fast-Forword Marge](https://miro.medium.com/v2/resize:fit:1400/0*GhW5WSCRH1dneU6c.gif)
 
 
 **Advantages of Fast-Forward Merges:**
