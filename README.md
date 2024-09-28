@@ -1007,6 +1007,65 @@ By understanding these commands and their workflows, you can effectively manage 
 
 **GitHub Issues** is a powerful tool within the GitHub platform that allows you to track, manage, and discuss tasks, bugs, and feature requests related to your projects. It provides a centralized location for teams to collaborate, prioritize work, and keep track of project progress.
 
+**Creating an issue**  
+Issues can be created in a variety of ways, so you can choose the most convenient method for your workflow.
+
+Who can use this feature?  
+* People with read access can create an issue in a repository where issues are enabled.
+
+Repository administrators can disable issues for a repository. For more information, see "Disabling issues."
+
+#### Creating an issue from a repository  
+* On GitHub, navigate to the main page of the repository.
+
+* Under your repository name, click  Issues.  
+![image](https://github.com/user-attachments/assets/4885ccee-2de2-4d8a-b441-542f8f4a9e93)
+
+* Click New issue.
+
+* If your repository uses issue templates, next to the type of issue you'd like to open, click Get started.  
+
+If the type of issue you'd like to open isn't included in the available options, click Open a blank issue.
+
+![image](https://github.com/user-attachments/assets/4c99e773-9f9a-4abf-a802-e5db9d80a863)
+
+
+* In the comment body field, type a description of your issue.
+
+* If you're a project maintainer, you can `assign the issue to someone`, `add it to a project`, `associate it with a milestone`, or` apply a label`.
+
+* When you're finished, click `Submit new` issue.
+
+#### Creating an issue with GitHub CLI
+GitHub CLI is an open source tool for using GitHub from your computer's command line. When you're working from the command line, you can use the GitHub CLI to save time and avoid switching context. To learn more about GitHub CLI, see "[About GitHub CLI](https://docs.github.com/en/github-cli/github-cli/about-github-cli)."
+
+To create an issue, use the `gh issue create` subcommand. To skip the interactive prompts, include the `--body` and the `--title` flags.
+```
+gh issue create --title "My new issue" --body "Here are more details."
+```
+You can also specify assignees, labels, milestones, and projects.
+```
+gh issue create --title "My new issue" --body "Here are more details." --assignee @me,monalisa --label "bug,help wanted" --project onboarding --milestone "learning codebase"
+```
+
+#### Creating an issue from a comment  
+You can open a new issue from a comment in an issue or pull request. When you open an issue from a comment, the issue contains a snippet showing where the comment was originally posted.
+
+* Navigate to the comment that you would like to open an issue from.
+
+* In that comment, click ...
+
+![image](https://github.com/user-attachments/assets/41f90177-a183-4121-b6ac-0c191675b80b)
+
+* Click **Reference in new issue**.
+
+* Use the "Repository" dropdown menu, and select the repository you want to open the issue in.
+
+* Type a descriptive title and body for the issue.
+
+* Click Create issue.
+
+
 **Key Features of GitHub Issues:**
 
 * **Issue Creation:** You can create new issues to report bugs, propose features, or track tasks.
