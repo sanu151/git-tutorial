@@ -1420,3 +1420,80 @@ _(You can add multiple files using wildcards like git add *.py)_
    - Comment on issues and PRs to provide feedback, suggest changes, or resolve discussions.
 
 By organizing the workflow, defining roles, and making use of GitHub features like Issues, PRs, and CI/CD, you can streamline collaboration on your GitHub project with your team.
+
+Setting up an SSH key to use with GitHub allows you to securely authenticate without needing to type your username and password each time you interact with repositories. Here’s a step-by-step guide to create and set up your SSH key:
+
+### Step 1: Check for Existing SSH Keys
+Before generating a new SSH key, check if you already have one:
+- Open a terminal and run:
+  ```bash
+  ls -al ~/.ssh
+  ```
+  If you see files like `id_rsa.pub` and `id_rsa`, you already have an SSH key pair. You can either use that key or generate a new one.
+
+### Step 2: Generate a New SSH Key
+If you don’t have an SSH key or want to create a new one:
+- Run the following command in the terminal:
+  ```bash
+   ssh-keygen -o -t rsa -C "your_email@example.com"
+  ```
+  Replace `"your_email@example.com"` with the email you use for GitHub.
+
+  If you get an error, you can use RSA instead:
+  ```bash
+  ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+  ```
+
+### Step 3: Save the SSH Key
+- When prompted to "Enter a file in which to save the key," press **Enter** to accept the default location (`~/.ssh/id_ed25519` or `~/.ssh/id_rsa`).
+- You’ll be asked to enter a passphrase (optional). This adds extra security to your SSH key. You can leave it blank or set a passphrase.
+
+### Step 4: Add the SSH Key to the SSH Agent
+To ensure your SSH key is loaded into the SSH agent for use in GitHub:
+- Start the SSH agent in the background:
+  ```bash
+  eval "$(ssh-agent -s)"
+  ```
+- Add your SSH private key to the agent:
+  ```bash
+  ssh-add ~/.ssh/id_ed25519
+  ```
+  (Or use `id_rsa` if you generated an RSA key).
+
+### Step 5: Add the SSH Key to Your GitHub Account
+Now, you need to add your SSH key to GitHub:
+1. Copy the SSH public key to your clipboard:
+   - If you’re using Linux/macOS, run:
+     ```bash
+     cat ~/.ssh/id_ed25519.pub
+     ```
+     (Or `id_rsa.pub` for RSA keys).
+   - On Windows (using Git Bash), run:
+     ```bash
+     clip < ~/.ssh/id_ed25519.pub
+     ```
+2. Go to [GitHub SSH Settings](https://github.com/settings/keys).
+3. Click **New SSH key**.
+4. In the "Title" field, give your key a descriptive name (e.g., "Laptop SSH Key").
+5. Paste your SSH key into the "Key" field.
+6. Click **Add SSH key**.
+
+### Step 6: Test the SSH Connection
+To make sure your SSH key works, run the following command in your terminal:
+```bash
+ssh -T git@github.com
+```
+You should see a message like:
+```
+Hi username! You've successfully authenticated, but GitHub does not provide shell access.
+```
+
+This confirms that your SSH key is properly set up and ready for use.
+
+### Step 7: Use SSH for GitHub Repository Access
+When cloning or interacting with repositories, make sure to use the SSH URL, which looks like:
+```
+git@github.com:username/repo.git
+```
+
+You are now set up to use SSH with GitHub, providing a more secure and convenient authentication method!
