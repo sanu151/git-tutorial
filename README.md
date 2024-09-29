@@ -1246,3 +1246,52 @@ In this example, `path/to/file.txt` has conflicting changes. You'll need to open
 * **Create a Backup:** Before making changes, consider creating a backup of the conflicting file in case you need to revert.
 
 By following these steps and carefully resolving conflicts, you can successfully merge branches in Git even when there are conflicting changes.
+
+## Resolving Merge Conflicts on GitHub
+
+**Understanding Merge Conflicts**
+
+Merge conflicts occur when you attempt to merge two branches that have modified the same file or portion of a file. This can happen when different developers work on the same codebase simultaneously or when you rebase a branch onto another.
+
+**Resolving Conflicts on GitHub:**
+
+1. **Identify Conflicting Files:**
+   - GitHub will usually notify you of merge conflicts when you push your changes to a remote repository. You can also check the "Pull Requests" tab to see if any merge conflicts are blocking your pull request.
+
+2. **Fetch the Remote Changes:**
+   - If you haven't already, fetch the latest changes from the remote repository:
+     ```bash
+     git fetch origin
+     ```
+
+3. **View Conflicting Files:**
+   - GitHub provides a visual diff tool to compare the conflicting changes. You can review the conflicting sections and decide which changes to keep.
+
+4. **Resolve Conflicts Locally:**
+   - If the conflicts are complex or you prefer to work locally, you can checkout the branch with the conflicts:
+     ```bash
+     git checkout <branch_name>
+     ```
+   - Resolve the conflicts manually in your text editor.
+   - Stage the resolved files:
+     ```bash
+     git add <filename>
+     ```
+   - Commit the changes:
+     ```bash
+     git commit -m "Resolved merge conflicts"
+     ```
+
+5. **Push the Resolved Changes:**
+   - Push your changes back to the remote repository:
+     ```bash
+     git push origin <branch_name>
+     ```
+
+**Additional Tips:**
+
+* **Use GitHub's Merge Conflict Viewer:** GitHub provides a visual diff tool that can help you understand and resolve conflicts more easily.
+* **Create a Backup:** Before making changes, consider creating a backup of the conflicting file in case you need to revert.
+* **Communicate with Teammates:** If you're working with a team, communicate with other developers to coordinate conflict resolution.
+
+By following these steps and using GitHub's tools effectively, you can resolve merge conflicts efficiently and continue working on your project.
