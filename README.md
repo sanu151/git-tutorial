@@ -1200,3 +1200,49 @@ You'll need to edit `path/to/file.txt` to resolve the conflicts, then stage the 
 * When you want to preserve a detailed history of your project.
 
 By understanding 3-way merges, you can effectively handle conflicts in Git and maintain a clean and accurate project history.
+
+## Resolving Merge Conflicts in Git
+
+Merge conflicts occur when Git encounters conflicting changes between two branches that are being merged. This happens when both branches have modified the same file or portion of a file.
+
+**Steps to Resolve Merge Conflicts:**
+
+1. **Identify Conflicting Files:**
+   - After attempting a merge, Git will indicate which files have conflicts. You can use the `git status` command to see which files are marked as "unmerged".
+
+2. **Open Conflicting Files:**
+   - Open the conflicting files in your text editor. Git will usually add markers like `<<<<<<< HEAD`, `=======`, and `>>>>>>>` to indicate the conflicting sections.
+
+3. **Manually Resolve Conflicts:**
+   - Carefully review the conflicting sections and decide which changes you want to keep.
+   - Edit the file to resolve the conflicts, removing the conflict markers and making the necessary changes.
+
+4. **Stage Resolved Files:**
+   - Once you've resolved the conflicts, stage the modified files using `git add`:
+     ```bash
+     git add <filename>
+     ```
+
+5. **Commit the Merge:**
+   - Create a new commit to merge the changes:
+     ```bash
+     git commit -m "Merged feature_branch with conflict resolution"
+     ```
+
+**Example:**
+
+```
+Auto-merging conflicting file: path/to/file.txt
+CONFLICT (content): Merge conflict in path/to/file.txt
+Automatic merge failed; fix conflicts and then commit.
+```
+
+In this example, `path/to/file.txt` has conflicting changes. You'll need to open the file, resolve the conflicts, and then stage and commit the changes.
+
+**Tips for Resolving Conflicts:**
+
+* **Review Changes Carefully:** Examine the conflicting sections carefully to understand the differences between the branches.
+* **Consider Using a Merge Tool:** Some Git clients or external tools can help visualize and resolve conflicts more easily.
+* **Create a Backup:** Before making changes, consider creating a backup of the conflicting file in case you need to revert.
+
+By following these steps and carefully resolving conflicts, you can successfully merge branches in Git even when there are conflicting changes.
