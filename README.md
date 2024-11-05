@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/7991637c-306b-4b49-ab82-60716c393fa4)
+![image](https://github.com/user-attachments/assets/3d0072e5-de78-4668-88dd-30fca84f46f6)
 
 # Git and GitHub
 
