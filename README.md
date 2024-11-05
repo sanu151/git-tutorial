@@ -6,6 +6,8 @@
 
 **GitHub:** Now, GitHub is like a digital library where we can store and share our Git-tracked projects. It's a platform for developers to collaborate, learn from each other, and showcase their work. Think of it as a social network for coders.
 
+### Git & Github Cheat Sheet : [https://practicalgit.com/cheat-sheet/](https://practicalgit.com/cheat-sheet/)
+
 **My Experience:** I first encountered Git and GitHub when I started contributing to an open-source project. At first, it felt a bit overwhelming, but once I got the hang of it, I realized how valuable it was. It helped me:
 
 * **Version Control:** Keep track of my changes and easily revert to previous versions if needed.
