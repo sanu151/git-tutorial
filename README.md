@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/7991637c-306b-4b49-ab82-60716c393fa4)
+
 # Git and GitHub
 
 **Git:** Let's start with Git. Imagine it as a super-powered diary for our code. It keeps track of every change we make, allowing us to go back in time if something goes wrong. It's like having a time machine for our projects!
